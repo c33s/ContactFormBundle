@@ -1,3 +1,7 @@
+# Propel
+Model/map/*
+Model/om/*
+
 # Bootstrap
 app/bootstrap*
 

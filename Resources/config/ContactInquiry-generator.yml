@@ -1,0 +1,50 @@
+generator: admingenerator.generator.propel
+params:
+    model: C33s\ContactFormBundle\Model\ContactInquiry
+    namespace_prefix: C33s
+    concurrency_lock: ~
+    bundle_name: ContactFormBundle
+    pk_requirement: ~
+    fields: ~
+    object_actions:
+        delete: ~
+    batch_actions:
+        delete: ~
+builders:
+    list:
+        params:
+            title:      Contact inquiries
+            display: ~
+            actions:
+                new: ~
+            object_actions:
+                show: ~
+                delete: ~
+    filters:
+        params:
+            display:    []
+    new:
+        params:
+            title:      New inquiry
+            display:
+                - sender_name
+                - sender_email
+                - subject
+                - message
+            actions:
+                save: ~
+                save-and-list: ~
+                list: ~
+    show:
+        params:
+            title:      "Inquiry \"%object%\"|{ %object%: ContactInquiry.subject }|"
+            display: ~
+            actions:
+                list: ~
+                new: ~
+    actions:
+        params:
+            object_actions:
+                delete: ~
+            batch_actions:
+                delete: ~

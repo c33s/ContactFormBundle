@@ -1,0 +1,5 @@
+
+c33s_contact_form:
+    resource: "@C33sContactFormBundle/Controller/"
+    type:     annotation
+    prefix:   /

@@ -1,0 +1,42 @@
+
+{% if form %}
+    <div id="c33s_contact_form_container">
+        {{ form_start(form, { 'style': 'horizontal', 'col_size': 'md', 'label_col': 4, 'widget_col': 8, 'id': 'contact_form' }) }}
+            {{ form_row(form.sender_name) }}
+            {{ form_row(form.sender_email) }}
+            {{ form_row(form.sender_phone) }}
+            {{ form_row(form.subject) }}
+            {{ form_row(form.message) }}
+            {{ form_row(form.actions) }}
+        {{ form_end(form) }}
+        
+        {% if use_ajax %}
+            <script type="text/javascript">
+            
+            $(function() {
+                $('#c33s_contact_form').ajaxForm({
+                    target: '#c33s_contact_form_container',
+                    replaceTarget: true
+                });
+            });
+            
+            </script>
+        {% endif %}
+    </div>
+{% endif %}
+
+{% if success_message %}
+    <div id="c33s_contact_form_success_container" style="display: none">
+        {{ success_message }}
+    </div>
+{% endif %}
+
+{% if success %}
+    <script type="text/javascript">
+    
+    $(function() {
+        $('#c33s_contact_form_success_container').show();
+    });
+    
+    </script>
+{% endif %}

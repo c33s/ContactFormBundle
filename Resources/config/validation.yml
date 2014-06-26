@@ -1,0 +1,4 @@
+C33s\ContactFormBundle\Model\ContactInquiry:
+    constraints:
+        - Callback:
+            methods:   [isInquiryValid]

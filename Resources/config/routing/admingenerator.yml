@@ -1,0 +1,4 @@
+C33sContactFormBundle:
+    resource: "@C33sContactFormBundle/Controller/ContactInquiry/"
+    type:     admingenerator
+    prefix:   /inquiries
