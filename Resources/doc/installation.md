@@ -7,7 +7,7 @@ in your `composer.json` file:
 ```js
 {
     "require": {
-        "c33s/contact-form-bundle": "@stable",
+        "c33s/contact-form-bundle": ">=0.1.0",
         "components/jquery": ">=1.9.0",
         "malsup/form": ">=3.36",
     }
