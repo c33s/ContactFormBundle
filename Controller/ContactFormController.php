@@ -8,8 +8,6 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
 use C33s\ContactFormBundle\Model\ContactInquiry;
 use C33s\ContactFormBundle\Form\Type\ContactFormType;
 use Symfony\Component\HttpFoundation\Request;
-use Symfony\Component\HttpFoundation\JsonResponse;
-use Symfony\Component\HttpFoundation\Response;
 
 class ContactFormController extends Controller
 {
@@ -80,6 +78,6 @@ class ContactFormController extends Controller
             )
         ;
         
-        $result = $this->get('mailer')->send($message);
+        $this->get('mailer')->send($message);
     }
 }

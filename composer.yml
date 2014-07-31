@@ -9,7 +9,7 @@ authors:
     email:      office@web-emerge.com
     homepage:   'http://web-emerge.com/'
 autoload:
-    psr-0:
+    psr-4:
         'C33s\ContactFormBundle': ''
 target-dir: "C33s/ContactFormBundle"
 minimum-stability: stable
