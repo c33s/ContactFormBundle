@@ -16,10 +16,9 @@
     ],
     "autoload": {
         "psr-4": {
-            "C33s\\ContactFormBundle": ""
+            "C33s\\ContactFormBundle\\": ""
         }
     },
-    "target-dir": "C33s/ContactFormBundle",
     "minimum-stability": "stable",
     "require": {
         "php": ">=5.3.3",
