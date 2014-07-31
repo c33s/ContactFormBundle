@@ -1,5 +1,4 @@
-ContactFormBundle
-=================
+[![SensioLabsInsight](https://insight.sensiolabs.com/projects/b224b924-f10f-47d3-86b7-a9d901debbdb/mini.png)](https://insight.sensiolabs.com/projects/b224b924-f10f-47d3-86b7-a9d901debbdb)
 
 Drop-in contact forms for Symfony2 websites using Propel.
 
