@@ -24,9 +24,16 @@ class C33sContactFormExtension extends Extension
         
         $loader = new Loader\YamlFileLoader($container, new FileLocator(__DIR__.'/../Resources/config'));
         $loader->load('services.yml');
-        
-        $container->setParameter('c33s_contact_form.recipients', $config['recipients']);
-        $container->setParameter('c33s_contact_form.sender_email', $config['sender_email']);
-        $container->setParameter('c33s_contact_form.send_copy_to_user', $config['send_copy_to_user']);
+        if ($config['email']['enabled'] === true) {
+            $container->setParameter('c33s_contact_form.email.enabled', $config['email']['enabled']);
+            $container->setParameter('c33s_contact_form.email.recipients', $config['email']['recipients']);
+            $container->setParameter('c33s_contact_form.email.subject', $config['email']['subject']);
+            $container->setParameter('c33s_contact_form.email.sender_email', $config['email']['sender_email']);
+            $container->setParameter('c33s_contact_form.email.send_copy_to_user', $config['email']['send_copy_to_user']);
+        }
+
+        if ($config['database']['enabled'] === true) {
+            $container->setParameter('c33s_contact_form.database.enabled', $config['database']['enabled']);
+        }
     }
 }
