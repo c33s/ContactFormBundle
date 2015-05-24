@@ -22,12 +22,12 @@
     "minimum-stability": "stable",
     "require": {
         "php": ">=5.3.3",
-        "propel/propel-bundle": "~1.2",
-        "cedriclombardot/admingenerator-generator-bundle": "~1.0"
+        "propel/propel-bundle": "~1.2"
     },
     "suggest": {
         "symfony/swiftmailer-bundle": ">=2.3.0",
         "components/jquery": ">=1.9.0",
-        "malsup/form": ">=3.36"
+        "malsup/form": ">=3.36",
+        "cedriclombardot/admingenerator-generator-bundle": "~1.0"
     }
 }
