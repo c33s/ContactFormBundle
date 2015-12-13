@@ -1,14 +1,14 @@
-name:           c33s/contact-form-bundle
-type:           symfony-bundle
-description:    Drop-in contact forms for Symfony2 websites using Propel
+name:          c33s/contact-form-bundle
+type:          symfony-bundle
+description:   Drop-in contact forms for Symfony2 websites using Propel
 #keywords: []
-homepage: "https://github.com/vworldat/ContactFormBundle"
+homepage:      "https://github.com/vworldat/ContactFormBundle"
 license:       ["MIT"]
 
 authors:
-  - name:       David
-    email:      office@web-emerge.com
-    homepage:   'http://web-emerge.com/'
+  - name:      David
+    email:     office@web-emerge.com
+    homepage:  'http://web-emerge.com/'
 
 autoload:
     psr-0:
@@ -19,13 +19,12 @@ target-dir: 'C33s/ContactFormBundle'
 minimum-stability: stable
 
 require:
-    php: '>=5.3.3'
-    
-    propel/propel-bundle:                               '~1.2'
+    php: '>=5.5.0'
+
+    propel/propel-bundle:           '~1.2'
+    symfony/symfony:                '~2.8'
 
 suggest:
-    symfony/swiftmailer-bundle:                     '>=2.3.0'
-    components/jquery:                              '>=1.9.0'
-    malsup/form:                                    '>=3.36'
-    cedriclombardot/admingenerator-generator-bundle:    '~1.0'
-    
+    symfony/swiftmailer-bundle:     '>=2.3.0'
+    components/jquery:              '>=1.9.0'
+    malsup/form:                    '>=3.36'

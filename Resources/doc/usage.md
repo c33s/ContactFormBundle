@@ -37,3 +37,16 @@ Use the included controller to display the contact form inside your own template
 ```
 
 The form will be submitted using ajax and replace itself with the success message if validation was successful.
+
+Sonata Block
+------------
+
+C33sContactFormBundle comes with a ready to use Sonata (Page) block service:
+
+```yml
+# app/config/config.yml
+
+sonata_block:
+    blocks:
+        c33s.block.service.contact_form:
+```

@@ -1,5 +1,5 @@
 
 c33s_contact_form:
-    resource: "@C33sContactFormBundle/Controller/"
+    resource: "@C33sContactFormBundle/Controller/ContactFormController.php"
     type:     annotation
     prefix:   /
