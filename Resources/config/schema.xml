@@ -19,6 +19,6 @@
         <column name="sender_name" type="varchar" size="255" required="true" />
         <column name="sender_email" type="varchar" size="255" required="false" />
         <column name="sender_phone" type="varchar" size="255" required="false" />
-        <column name="message" type="longvarchar" size="255" required="true" />
+        <column name="message" type="longvarchar" required="true" />
     </table>
 </database>
