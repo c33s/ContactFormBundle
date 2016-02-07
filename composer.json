@@ -21,9 +21,7 @@
     "target-dir": "C33s/ContactFormBundle",
     "minimum-stability": "stable",
     "require": {
-        "php": ">=5.5.0",
-        "propel/propel-bundle": "~1.2",
-        "symfony/symfony": "~2.8"
+        "propel/propel-bundle": "~1.2"
     },
     "suggest": {
         "symfony/swiftmailer-bundle": ">=2.3.0",
