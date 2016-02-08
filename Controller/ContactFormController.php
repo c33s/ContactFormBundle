@@ -23,7 +23,7 @@ class ContactFormController extends Controller
 
         $inquiry = new ContactInquiry();
 
-        $form = $this->createForm(ContactFormType::class, $inquiry, array(
+        $form = $this->createForm(new ContactFormType(), $inquiry, array(
             'action' => $this->generateUrl('C33s_ContactFormBundle_form'),
             'method' => 'POST',
             'attr' => array(
