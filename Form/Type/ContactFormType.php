@@ -16,37 +16,37 @@ class ContactFormType extends AbstractType
 {
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
-        $builder->add('sender_name', TextType::class, array(
+        $builder->add('sender_name', new TextType(), array(
             'required' => true,
             'label' => 'Name',
             'translation_domain' => 'C33sContactForm',
         ));
 
-        $builder->add('sender_email', EmailType::class, array(
+        $builder->add('sender_email', new EmailType(), array(
             'required' => false,
             'label' => 'E-Mail',
             'translation_domain' => 'C33sContactForm',
         ));
 
-        $builder->add('sender_phone', TextType::class, array(
+        $builder->add('sender_phone', new TextType(), array(
             'required' => false,
             'label' => 'Phone number',
             'translation_domain' => 'C33sContactForm',
         ));
 
-        $builder->add('subject', TextType::class, array(
+        $builder->add('subject', new TextType(), array(
             'required' => true,
             'label' => 'Subject',
             'translation_domain' => 'C33sContactForm',
         ));
 
-        $builder->add('message', TextareaType::class, array(
+        $builder->add('message', new TextareaType(), array(
             'required' => true,
             'label' => 'Message',
             'translation_domain' => 'C33sContactForm',
         ));
 
-        $builder->add('send', SubmitType::class, array(
+        $builder->add('send', new SubmitType(), array(
             'label' => 'Send',
             'translation_domain' => 'C33sContactForm',
             'attr' => array(
